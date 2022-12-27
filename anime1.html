@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #fa7ac1;
+        }
+        @keyframes sam1 {
+            from{
+                width: 0px;
+                height:0px;
+                background-color: rgb(196, 196, 47);
+
+            }
+            to{
+                width:100px;
+                height: 100px;
+                border-radius: 50%;
+                transform: translateX(500px);
+                background-color: yellow;
+                border:2px solid red;
+                
+            }
+        }
+       
+        @keyframes sam2 {
+            0%{
+                transform: translate(0px,0px);
+            }
+            50%{
+                border-radius: 50%;
+                background-color: rgba(22, 177, 117, 0.4);
+            }
+            100%{
+                transform: translate(1270px,300px);
+            }
+        }
+        
+        @keyframes sam3 {
+            0%{
+                transform: translate(1270px,0px);
+            }
+            50%{
+                border-radius: 50%;
+                background-color: rgba(50, 163, 120,0.4);
+
+            }
+            100%{
+                transform: translate(0px,300px);
+            }
+        }
+        
+        
+
+        
+        #div1{
+            background-color: blue;
+            border: 2px solid black;
+            animation: sam1 3s linear  infinite alternate;
+            position: relative;
+            top:10px;
+            left: 20px;
+        }
+        #div2{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 2px solid black;
+            animation: sam2 5s infinite linear alternate;
+        
+        }
+        
+        #div3{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            border: 2px solid black;
+            animation: sam3 5s infinite linear alternate;
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>
